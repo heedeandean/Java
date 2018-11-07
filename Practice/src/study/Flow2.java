@@ -1,6 +1,6 @@
 package study;
 
-public class ContinueTest {
+public class Flow2 {
 
 	public static void main(String[] args) {
 		

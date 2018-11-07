@@ -1,6 +1,6 @@
 package study;
 
-public class BreakTest {
+public class Flow1 {
 
 	public static void main(String[] args) {
 		

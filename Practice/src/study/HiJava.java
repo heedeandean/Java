@@ -8,20 +8,18 @@ public class HiJava {
 		
 		char operator = '*';
 		
-		if(operator == '+') {
-			System.out.println(num1 + num2);
-		}
-		else if(operator == '-') {
-			System.out.println(num1 - num2);
-		}
-		else if(operator == '*') {
-			System.out.println(num1 * num2);
-		}
-		else if(operator == '/') {
-			System.out.println(num1 / num2);
-		}
-		else {
-			System.out.println("존재하지 않는 사칙연산");
+		switch(operator) {
+			case '+' : System.out.println(num1 + num2);
+			break;
+			case '-' : System.out.println(num1 - num2);
+			break;
+			case '*' : System.out.println(num1 * num2);
+			break;
+			case '/' : System.out.println(num1 / num2);
+			break;
+			
+			default : System.out.println("존재하지 않는 사칙 연산 기호");
+			break;
 		}
 
 	}

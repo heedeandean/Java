@@ -1,11 +1,10 @@
 package study;
 
 public class HiTest {
+	
+	String subName;
+	int score;
+	
 
-	public static void main(String[] args) {
-		HiJava hee = new HiJava();
-		
-
-	}
 
 }

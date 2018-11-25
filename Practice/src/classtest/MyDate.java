@@ -23,7 +23,7 @@ public class MyDate {
 		switch(month) {
 		
 			case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-				if (day < 0 || day > 31) {
+				if (day < 1 || day > 31) {
 					isValid = false;
 				}
 				else {
@@ -32,7 +32,7 @@ public class MyDate {
 				break;
 				
 			case 4: case 6: case 9: case 11:
-				if (day < 0 || day > 30) {
+				if (day < 1 || day > 30) {
 					isValid = false;
 				}
 				else {
@@ -42,7 +42,7 @@ public class MyDate {
 				
 			case 2:
 				if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-					if (day < 0 || day > 29) {
+					if (day < 1 || day > 29) {
 						isValid = false;
 					}
 					else {
@@ -50,7 +50,7 @@ public class MyDate {
 					}
 				}
 				else {
-					if (day < 0 || day > 28) {
+					if (day < 1 || day > 28) {
 						isValid = false;
 					}
 					else {

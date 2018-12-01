@@ -1,24 +1,25 @@
 package study;
 
-class Birth {
-	int day;
-	int month;
-	int year;
+class Person {
+	String name;
+	int age;
 	
-	public void setYear(int year) {
-		this.year = year;
+	Person() {
+		
+		this("엄희진", 25);
+		this.name = "하하";
 	}
 	
-	public void printThis() {
-		System.out.println(this);
+	Person(String name, int age) {
+		this.name = name;
+		this.age = age;
 	}
 }
 	
 public class HiJava {
 	public static void main(String[] args) {
-		Birth b = new Birth();
-		b.setYear(2018);
-		System.out.println(b);
-		b.printThis();
+		Person hee = new Person();
+		System.out.println(hee.name);
+		System.out.println(hee.age);
 	}
 }

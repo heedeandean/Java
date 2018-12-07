@@ -1,11 +1,11 @@
 package classtest.staticex;
 
 public class Student {
-	public static int serialNum = 0;
-	public int stuID;
-	public String stuName;
-	public int grade;
-	public String addr;
+	private static int serialNum = 0;
+	int stuID;
+	String stuName;
+	int grade;
+	String addr;
 	
 	// »ı¼ºÀÚ.
 	public Student() {
@@ -20,5 +20,13 @@ public class Student {
 	
 	public void setStuName(String name) {
 		stuName = name;
+	}
+
+	public static int getSerialNum() {
+		return serialNum;
+	}
+
+	public static void setSerialNum(int serialNum) {
+		Student.serialNum = serialNum;
 	}
 }

@@ -2,26 +2,27 @@ package study;
 
 public class HiJava {
 	public static void main(String[] args) {
-		int score = 100;
-		char grade;
+		int floor = 3;
+		String store;
 		
-		if (score >= 90) {
-			grade = 'A';
-		}
-		else if (score >= 80) {
-			grade = 'B';
-		}
-		else if (score >= 70) {
-			grade = 'C';
-		}
-		else if (score >= 60) {
-			grade = 'D';
-		}
-		else {
-			grade = 'F';
+		switch(floor) {
+		 case 1 : store = "약국";
+		 	break;
+		 case 2 : store = "정형외과";
+		 	break;
+		 case 3 : store = "피부과";
+		 	break;
+		 case 4 : store = "치과";
+		 	break;
+		 case 5 : store = "헬스 클럽";
+		 	break;
+		 default:
+			 store = "존재하지 않는 층";
+			 break;
 		}
 		
-		System.out.println("학점은 " + grade + "입니다.");
+		System.out.println(floor + "층은 " + store + "입니다.");
+		
 
 	}
 }

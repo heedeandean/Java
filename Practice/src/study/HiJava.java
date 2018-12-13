@@ -2,12 +2,13 @@ package study;
 
 public class HiJava {
 	public static void main(String[] args) {
-		int sum = 0;
 		
-		for (int num = 1; num <= 10; num++) {
-			sum += num;
+		for(int dan=2; dan<=9; dan++) {
+			for(int times=1; times<=9; times++) {
+				System.out.println(dan + " x " + times + " = " + (dan*times));
+			}
+			System.out.println();
 		}
-		System.out.println(sum);
 
 
 	}

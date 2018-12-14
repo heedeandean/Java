@@ -3,12 +3,15 @@ package study;
 public class HiJava {
 	public static void main(String[] args) {
 		
-		for(int dan=2; dan<=9; dan++) {
-			for(int times=1; times<=9; times++) {
-				System.out.println(dan + " x " + times + " = " + (dan*times));
-			}
-			System.out.println();
+		int num;
+		
+		for(num=1; num<=100; num++) {
+			if (num % 3 != 0) 
+				continue;
+			
+			System.out.println(num);
 		}
+		
 
 
 	}

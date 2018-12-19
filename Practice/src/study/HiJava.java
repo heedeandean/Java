@@ -2,13 +2,27 @@ package study;
 
 public class HiJava {
 	public static void main(String[] args) {
-		for (int dan=2; dan<=9; dan++) {
-			for (int times=1; times<=9; times++) {
-				if (dan < times)
-					break;
-				System.out.println(dan + " x " + times + " = " + (dan * times));
+		int lineCount = 4;
+		int starCount = 1;
+		int spaceCount = lineCount/2 + 3;
+		
+
+		for (int i=1; i<=lineCount; i++) {
+			
+			for (int j=1; j<=spaceCount; j++) {
+				System.out.print(" ");
 			}
+			
+			for (int j=1; j<=starCount; j++) {
+				System.out.print("*");
+			}
+
+			spaceCount -= 1;
+			starCount += 2;
 			System.out.println();
 		}
+			
+		
+	
 	}
 }

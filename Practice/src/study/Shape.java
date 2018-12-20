@@ -6,11 +6,11 @@ public class Shape {
 		
 		// 다이아몬드 모양 출력하기 코딩.
 		int shape = 1; 
-		int line = 50;
+		int line = 7;
 		int space = (line / 2) + 3; 
 		
 		// 지정한 line만큼 출력.
-		for(int k=1; k<=(line+1); k++) {
+		for(int k=1; k<=line; k++) {
 			
 			// 공백 ' '출력.
 			for(int j=1; j<space; j++) {

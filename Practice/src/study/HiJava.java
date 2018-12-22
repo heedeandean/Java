@@ -1,41 +1,23 @@
 package study;
 
 public class HiJava {
+	int age;
+	String name;
+	boolean isMarried;
+	int child;
+	 
+	
 	public static void main(String[] args) {
-		int num1 = 10;
-		int num2 = 20;
+		HiJava a = new HiJava();
+		a.age = 40;
+		a.name = "James";
+		a.isMarried = true;
+		a.child = 3;
 		
-		int result = add(num1, num2);
-		System.out.println(result);
-		
-		result = sub(num1, num2);
-		System.out.println(result);
-		
-		result = mul(num1, num2);
-		System.out.println(result);
-		
-		double result_div = div(num1, num2);
-		System.out.println(result_div);
+		System.out.println(a.age + a.name + a.isMarried + a.child);
 
 	}
 	
-	public static int add(int n1, int n2) {
-		int result = n1 + n2;
-		return result;
-	}
+
 	
-	public static int sub(int n1, int n2) {
-		int result = n1 - n2;
-		return result;
-	}
-	
-	public static int mul(int n1, int n2) {
-		int result = n1 * n2;
-		return result;
-	}
-	
-	public static double div(double n1, double n2) {
-		double result = n1 / n2;
-		return result;
-	}
 }

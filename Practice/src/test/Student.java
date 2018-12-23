@@ -2,9 +2,18 @@ package test;
 
 public class Student {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	String name;
+	double height;
+	double weight;
+	
+	public Student(String sname, double sheight, double sweight) {
+		name = sname;
+		height = sheight;
+		weight = sweight;
+		
 
 	}
+
+
 
 }

@@ -8,7 +8,7 @@ public class ST {
 		
 		Student date2 = new Student(2, 10, 2006);
 		System.out.println(date2.isValid());
-		
+
 
 	}
 

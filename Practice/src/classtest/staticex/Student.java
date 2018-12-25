@@ -6,12 +6,14 @@ public class Student {
 	String stuName;
 	int grade;
 	String addr;
+	int cardNum;
 	
 	// 생성자.
 	public Student() {
 		
 		serialNum++; // 학생이 생성될 때 마다 증가.
 		stuID = serialNum;
+		cardNum = stuID + 100;
 	}
 	
 	public String getStuName() {

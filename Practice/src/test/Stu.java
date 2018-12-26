@@ -1,37 +1,24 @@
 package test;
 
-
 public class Stu {
+	public static int serialNum = 1000;
+	public int stuID;
 	public String stuName;
 	public int grade;
-	public int money;
+	public String addr;
 	
-	public Stu(String stuName, int money) {
+	public Stu() {
+		serialNum++;
+		stuID = serialNum;
+	}
+	
+	public String getStuName() {
+		return stuName;
+	}
+	
+	public void setStuName(String stuName) {
 		this.stuName = stuName;
-		this.money = money;
 	}
-	
-	public void takeBus(Bus bus) {
-		bus.take(1000);
-		this.money -= 1000;
-	}
-	
-	public void takeSubway(Subway subway) {
-		subway.take(1500);
-		this.money -= 1500;
-	}
-	
-	public void takeTaxi(Taxi taxi) {
-		taxi.take(10000);
-		this.money -= 10000;
-	}
-	
-	public void showInfo() {
-		System.out.println(stuName + "¥‘¿« ≥≤¿∫ µ∑¿∫ " + money + "¿‘¥œ¥Ÿ.");
-	}
-	
-	
-	
-	
+
 
 }

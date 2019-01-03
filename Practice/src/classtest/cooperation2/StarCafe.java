@@ -1,22 +1,22 @@
 package classtest.cooperation2;
 
 public class StarCafe {
-	String menu;
-	int customerCnt;
+
 	int money;
 	
-	public StarCafe(String menu) {
-		this.menu = menu;
-	}
-	
-	public void buy(int money) {
+	public String brewing(int money) {
+		
 		this.money += money;
-		customerCnt++;
+		
+		if(money == Menu.SAme) {
+			return "별 다방 아메리카노를 구입했습니다.";
+		}
+		else if(money == Menu.SLatte) {
+			return "별 다방 라떼를 구입했습니다.";
+		}
+		else {
+			return null;
+		}
 	}
-	
-	public void showInfo() {
-		System.out.println("별다방의 방문 고객은 " + customerCnt 
-							+ "명이고, " + menu + "의 수입은 " + money + "원 입니다. ");
-	}
-	
+		
 }

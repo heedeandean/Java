@@ -1,22 +1,22 @@
 package classtest.cooperation2;
 
 public class CongCafe {
-	String menu;
-	int customerCnt;
+	
 	int money;
 	
-	public CongCafe(String menu) {
-		this.menu = menu;
-	}
-	
-	public void buy(int money) {
+	public String brewing(int money) {
+		
 		this.money += money;
-		customerCnt++;
+		
+		if(money == Menu.CAme) {
+			return "콩 다방 아메리카노를 구입했습니다.";
+		}
+		else if(money == Menu.CLatte) {
+			return "콩 다방 라떼를 구입했습니다.";
+		}
+		else {
+			return null;
+		}
 	}
-	
-	public void showInfo() {
-		System.out.println("콩다방의 방문 고객은 " + customerCnt 
-							+ "명이고, " + menu + "의 수입은 " + money + "원 입니다. ");
-	}
-	
+		
 }

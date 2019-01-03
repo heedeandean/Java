@@ -1,25 +1,29 @@
 package classtest.cooperation2;
 
 public class Customer {
-	public String cusName;
-	public int money;
+	
+	String cusName;
+	int money;
 	
 	public Customer(String cusName, int money) {
 		this.cusName = cusName;
 		this.money = money;
 	}
 	
-	public void buyStarCafe(StarCafe starCafe) {
-		starCafe.buy(4000);
-		this.money -= 4000;
+	public void buyStarCafe(StarCafe sCafe, int money) {
+		String message = sCafe.brewing(4000);
+		if(message != null) {
+			this.money -= money;
+			System.out.println(cusName + "님이 " + money + "원 으로 " + message);
+		}
 	}
 	
-	public void buyCongCafe(CongCafe congCafe) {
-		congCafe.buy(4500);
-		this.money -= 4500;
+	public void buyCongCafe(CongCafe cCafe, int money) {
+		String message = cCafe.brewing(4500);
+		if(message != null) {
+			this.money -= money;
+			System.out.println(cusName + "님이 " + money + "원 으로 " + message);
+		}
 	}
 	
-	public void showInfo() {
-		System.out.println(cusName + "님의 남은 돈은 " + money + "원 입니다.");
-	}
 }

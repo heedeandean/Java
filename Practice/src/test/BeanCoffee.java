@@ -1,13 +1,12 @@
 package test;
 
 public class BeanCoffee {
-	
 	int money;
 	
 	public String bb(int money) {
 		this.money += money;
 		
-		if(money == Menu.BAME) {
+		if(money == Menu.BAM) {
 			return "콩다방 아메 구입";
 		}
 		else if(money == Menu.BLATTE) {
@@ -16,7 +15,6 @@ public class BeanCoffee {
 		else {
 			return null;
 		}
-		
 		
 	}
 

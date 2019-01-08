@@ -1,15 +1,15 @@
 package test;
 
-public class Person {
+public class People {
 	String name;
 	int money;
 	
-	public Person(String name, int money) {
+	People(String name, int money) {
 		this.name = name;
 		this.money = money;
 	}
 	
-	public void buyStarCoffee(StarCoffee sCoffee, int money) {
+	public void buyScoffee(StarCoffee sCoffee, int money) {
 		String message = sCoffee.bb(4000);
 		
 		if(message != null) {
@@ -18,7 +18,7 @@ public class Person {
 		}
 	}
 	
-	public void buyBeanCoffee(BeanCoffee bCoffee, int money) {
+	public void buyBeancoffee(BeanCoffee bCoffee, int money) {
 		String message = bCoffee.bb(4500);
 		
 		if(message != null) {
@@ -26,5 +26,7 @@ public class Person {
 			System.out.println(name + "´ÔÀÌ " + money + "¿ø À¸·Î " + message);
 		}
 	}
-
+	
+	
+	
 }

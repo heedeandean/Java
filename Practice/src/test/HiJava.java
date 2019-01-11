@@ -3,11 +3,17 @@ package test;
 public class HiJava {
 
 	public static void main(String[] args) {
-		int[] num = new int[] {1,2,3,4,5,6,7,8,9,10};
+		double[] data = new double[5];
+		int size = 0;
 		
-		for(int i = 0; i < num.length; i ++) {
-			System.out.println(num[i]);
+		data[0] = 10.0; size++;
+		data[1] = 20.0; size++;
+		data[2] = 30.0; size++;
+		
+		for(int i=0; i<size; i++) {
+			System.out.println(data[i]);
 		}
+
 	}
 
 }

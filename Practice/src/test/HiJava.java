@@ -3,18 +3,14 @@ package test;
 public class HiJava {
 
 	public static void main(String[] args) {
-		char[] alp = new char[26];
-		char ch = 'A';
+		int[] array1 = {10,20,30,40,50};
+		int[] array2 = {1,2,3,4,5};
 		
-		for(int i=0; i< alp.length; i++, ch++) {
-			alp[i] = ch; 
+		System.arraycopy(array1, 0, array2, 1, 3);
+		
+		for(int i=0; i<array2.length; i++) {
+			System.out.println(array2[i]);
 		}
-		
-		for(int i=0; i< alp.length; i++) {
-			System.out.println(alp[i]+", " + (int)alp[i]);
-		}
-		
-
 
 	}
 

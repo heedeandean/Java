@@ -4,11 +4,13 @@ public class Student {
 	private int stuID;
 	private String name;
 	
+	public Student() {}
+	
 	public Student(int stuID, String name) {
 		this.stuID = stuID;
 		this.name = name;
 	}
-
+	
 	public int getStuID() {
 		return stuID;
 	}

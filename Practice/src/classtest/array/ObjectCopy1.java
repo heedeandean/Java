@@ -15,6 +15,14 @@ public class ObjectCopy1 {
 		for(int i=0; i<stuArray2.length; i++) {
 			stuArray2[i].showStudentInfo();
 		}
+		
+		System.out.println("======");
+		stuArray1[0].setStuID(100);
+		stuArray1[0].setName("rara");
+		
+		System.out.println("======");
+		for(int i=0; i<stuArray2.length; i++) {
+			stuArray2[i].showStudentInfo();
+		}
 	}
-
 }

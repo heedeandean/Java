@@ -3,10 +3,14 @@ package test;
 public class HiJava {
 
 	public static void main(String[] args) {
-		String[] strArray = {"매운족발", "허니오리지날", "단호박피자", "까르보나라", "까르보불닭"};
+		int[][] arr = {{1,2,3}, {4,5,6}};
 		
-		for(String food : strArray) {
-			System.out.println(food);
+		for(int i=0; i<arr.length; i++) {
+			for(int j=0; j<arr[i].length; j++) {
+				System.out.println(arr[i][j]);
+			}
+			System.out.println();
 		}
+
 	}
 }

@@ -4,17 +4,15 @@ public class test {
 
 	public static void main(String[] args) {
 		
-		char[][] alp = new char[13][2];
-		char ch = 'a';
+		int[][] arr = new int[2][3];
 		
-		for(int i=0; i<alp.length; i++) {
-			for(int j=0; j<alp[i].length; j++) {
-				alp[i][j] = ch;
-				ch++;
-				
-				System.out.println(alp[i][j]);
+		for(int i=0; i<arr.length; i++) {
+			for(int j=0; j<arr[i].length; j++) {
+				System.out.println(arr[i][j]);
 			}
 			System.out.println();
 		}
+		System.out.println(arr.length);
+		System.out.println(arr[0].length);
 	}
 }

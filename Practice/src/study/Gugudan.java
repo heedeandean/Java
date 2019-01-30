@@ -4,7 +4,7 @@ public class Gugudan {
 
 	public static void main(String[] args) {
 		
-		// ±¸±¸´ÜÀ» Â¦¼ö ´Ü¸¸ Ãâ·Â.
+		// êµ¬êµ¬ë‹¨ì„ ì§ìˆ˜ ë‹¨ë§Œ ì¶œë ¥.
 		for(int dan=2; dan<=8; dan++) {
 			if(dan % 2 != 0)
 				continue;

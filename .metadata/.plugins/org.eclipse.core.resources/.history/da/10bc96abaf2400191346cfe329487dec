@@ -1,0 +1,33 @@
+package study;
+
+public class Operator2 {
+
+	public static void main(String[] args) {
+		
+		int num1 = 10;
+		int num2 = 2;
+		char operator = '*';
+		
+		switch(operator) {
+			case '+' : 
+				System.out.println(num1 + " + " + num2 + " = " + (num1 + num2));
+				break;
+				
+			case '-' : 
+				System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+				break;	
+			
+			case '*' : 
+				System.out.println(num1 + " * " + num2 + " = " + (num1 * num2));
+				break;
+			
+			case '/' : 
+				System.out.println(num1 + " / " + num2 + " = " + (num1 / num2));
+				break;
+			
+			default : 			
+				System.out.println("연산자를 잘못 입력했습니다.");
+				break;
+		}
+	}
+}

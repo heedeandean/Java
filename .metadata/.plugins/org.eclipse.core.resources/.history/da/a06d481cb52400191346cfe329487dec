@@ -1,0 +1,26 @@
+package study;
+
+public class Shape {
+
+	public static void main(String[] args) {
+		int line = 4;
+		int spaceCount = (line / 2) + 2;
+		int startCount = 1;
+		
+		for(int i=1; i<=line; i++) {
+			for(int j=1; j<=spaceCount; j++) {
+				System.out.print(' ');
+			}
+			for(int j=1; j<=startCount; j++) {
+				System.out.print('*');
+			}
+			System.out.println();
+			
+			spaceCount -= 1;
+			startCount += 1;
+			
+		}
+
+	}
+
+}

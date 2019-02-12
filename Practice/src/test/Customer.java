@@ -1,12 +1,36 @@
 package test;
 
 public class Customer {
-	private int cusID;
-	private String cusName;
-	private String cusGrade;
+	protected int cusID;
+	protected String cusName;
+	protected String cusGrade;
 	int bonusPoint;
 	double bonusRatio;
 	
+	public int getCusID() {
+		return cusID;
+	}
+
+	public void setCusID(int cusID) {
+		this.cusID = cusID;
+	}
+
+	public String getCusName() {
+		return cusName;
+	}
+
+	public void setCusName(String cusName) {
+		this.cusName = cusName;
+	}
+
+	public String getCusGrade() {
+		return cusGrade;
+	}
+
+	public void setCusGrade(String cusGrade) {
+		this.cusGrade = cusGrade;
+	}
+
 	public Customer() {
 		cusGrade = "SILVER";
 		bonusRatio = 0.01;

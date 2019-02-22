@@ -6,23 +6,23 @@ public class StudentArrayList {
 
 	public static void main(String[] args) {
 		
-		ArrayList<Student> school = new ArrayList<Student>();
+		ArrayList<Student> stuList = new ArrayList<Student>();
 		
-		school.add(new Student(1001, "Um"));
-		school.add(new Student(1002, "Hee"));
-		school.add(new Student(1003, "Jin"));
+		stuList.add(new Student(1001, "Um"));
+		stuList.add(new Student(1002, "Hee"));
+		stuList.add(new Student(1003, "Jin"));
 		
-		for(int i=0; i<school.size(); i++) {
+		for(int i=0; i<stuList.size(); i++) {
 //			Student student = school.get(i);
 //			student.showStudentInfo();
 //			
-			school.get(i).showStudentInfo();
+			stuList.get(i).showStudentInfo();
 		}
 		
 		System.out.println("=================");
 		
-		for(Student student : school) {
-			student.showStudentInfo();
+		for(Student stu : stuList) {
+			stu.showStudentInfo();
 		}
 	}
 }

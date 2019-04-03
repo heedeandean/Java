@@ -3,8 +3,8 @@ package study;
 public class HelloJava {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int year = 2019;
+		System.out.println(year);
 	}
 
 }

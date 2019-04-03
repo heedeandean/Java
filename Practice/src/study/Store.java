@@ -9,20 +9,20 @@ public class Store {
 		
 		// switch-case
 		switch(floor) {
-			case 1 : store = "¾à±¹";
-					 break;
-			case 2 : store = "Á¤Çü¿Ü°ú";
-					 break;
-			case 3 : store = "ÇÇºÎ°ú";
-			 		 break;
-			case 4 : store = "Ä¡°ú";
-			 		 break;
-			case 5 : store = "Çï½º Å¬·´";
-			 		 break;
-			default: store = "Á¸Àç ÇÏÁö ¾Ê´Â Ãş";
-					 break;
+			case 1 : store = "ì•½êµ­";
+				 break;
+			case 2 : store = "ì •í˜•ì™¸ê³¼";
+				 break;
+			case 3 : store = "í”¼ë¶€ê³¼";
+			 	 break;
+			case 4 : store = "ì¹˜ê³¼";
+			 	 break;
+			case 5 : store = "í—¬ìŠ¤ í´ëŸ½";
+			 	 break;
+			default: store = "ì¡´ì¬ í•˜ì§€ ì•ŠëŠ” ì¸µ";
+				 break;
 		}
 		
-		System.out.println(floor + "ÃşÀº " + store + "ÀÔ´Ï´Ù.");
+		System.out.println(floor + "ì¸µì€ " + store + "ì…ë‹ˆë‹¤.");
 	}
 }

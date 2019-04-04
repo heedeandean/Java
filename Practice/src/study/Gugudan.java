@@ -4,7 +4,7 @@ public class Gugudan {
 
 	public static void main(String[] args) {
 		
-		// ±¸±¸´ÜÀ» Â¦¼ö ´Ü¸¸ Ãâ·Â.
+		// êµ¬êµ¬ë‹¨ì„ ìˆ˜ ë‹¨ë§Œ ì¶œë ¥.
 		int dan;
 		int times;
 		

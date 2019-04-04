@@ -4,7 +4,7 @@ public class Gugudan {
 
 	public static void main(String[] args) {
 		
-		// 구구단을 수 단만 출력.
+		// 구구단을 짝수 단만 출력.
 		int dan;
 		int times;
 		

@@ -5,20 +5,20 @@ public class Taxi {
 	int peopleCount;
 	int money;
 	
-	// »ı¼ºÀÚ.
+	// ìƒì„±ì.
 	public Taxi(int taxiNum) {
 		this.taxiNum = taxiNum;
 	}
 	
-	// ½Â°´ÀÌ ÅÃ½Ã¿¡ Åº °æ¿ì¸¦ ±¸ÇöÇÑ ÇÔ¼ö.
+	// ìŠ¹ê°ì´ íƒì‹œì— íƒ„ ê²½ìš°ë¥¼ êµ¬í˜„í•œ í•¨ìˆ˜.
 	public void take(int money) {
 		this.money += money;
 		peopleCount++;
 	}
 	
-	// ÅÃ½Ã Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ÇÔ¼ö.
+	// íƒì‹œ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜.
 	public void showInfo() {
-		System.out.println("ÅÃ½Ã " + taxiNum + "ÀÇ ½Â°´Àº " + peopleCount + 
-						   "¸íÀÌ°í, ¼öÀÔÀº " + money + "¿ø ÀÔ´Ï´Ù.");
+		System.out.println("íƒì‹œ " + taxiNum + "ì˜ ìŠ¹ê°ì€ " + peopleCount + 
+				   "ëª…ì´ê³ , ìˆ˜ì…ì€ " + money + "ì› ì…ë‹ˆë‹¤.");
 	}
 }

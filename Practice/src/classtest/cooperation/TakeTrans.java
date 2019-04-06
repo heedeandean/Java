@@ -16,7 +16,7 @@ public class TakeTrans {
 		
 		System.out.println();
 		
-		Subway subwayGreen = new Subway("7호선"); 		 // 7호선 지하철 생성
+		Subway subwayGreen = new Subway("7호선"); 		  // 7호선 지하철 생성
 		heejin.takeSubway(subwayGreen);			  	  // heejin이 7호선 지하철 탐
 		heejin.showInfo();					  // heejin 정보 출력
 		subwayGreen.showInfo();					  // 지하철 정보 출력

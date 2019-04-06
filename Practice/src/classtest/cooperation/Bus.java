@@ -5,21 +5,21 @@ public class Bus {
 	int peopleCount;
 	int money;
 	
-	// »ı¼ºÀÚ.
+	// ìƒì„±ì.
 	public Bus(int busNum) {
 		this.busNum = busNum;
 	}
 	
-	// ½Â°´ÀÌ ¹ö½º¿¡ Åº °æ¿ì¸¦ ±¸ÇöÇÑ ÇÔ¼ö.
+	// ìŠ¹ê°ì´ ë²„ìŠ¤ì— íƒ„ ê²½ìš°ë¥¼ êµ¬í˜„í•œ í•¨ìˆ˜.
 	public void take(int money) {
 		this.money += money;
 		peopleCount++;
 	}
 	
-	//¹ö½º Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ÇÔ¼ö.
+	//ë²„ìŠ¤ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜.
 	public void showInfo() {
-		System.out.println("¹ö½º " + busNum + "¹øÀÇ ½Â°´Àº " + peopleCount + 
-						   "¸íÀÌ°í, ¼öÀÔÀº " + money + "¿ø ÀÔ´Ï´Ù.");
+		System.out.println("ë²„ìŠ¤ " + busNum + "ë²ˆì˜ ìŠ¹ê°ì€ " + peopleCount + 
+				   "ëª…ì´ê³ , ìˆ˜ì…ì€ " + money + "ì› ì…ë‹ˆë‹¤.");
 	}
 
 }

@@ -1,10 +1,13 @@
 package study;
 
 public class HiJava {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	String name;
+	float height;
+	float weight;
+	
+	public HiJava() {}
+	
+	public HiJava(String pname) {
+		name = pname;
 	}
-
 }

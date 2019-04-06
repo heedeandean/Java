@@ -5,21 +5,21 @@ public class Subway {
 	int peopleCount;
 	int money;
 	
-	// »ı¼ºÀÚ.
+	// ìƒì„±ì.
 	public Subway(String lineNum) {
 		this.lineNum = lineNum;
 	}
 	
-	// ½Â°´ÀÌ ÁöÇÏÃ¶¿¡ Åº °æ¿ì¸¦ ±¸ÇöÇÑ ÇÔ¼ö.
+	// ìŠ¹ê°ì´ ì§€í•˜ì² ì— íƒ„ ê²½ìš°ë¥¼ êµ¬í˜„í•œ í•¨ìˆ˜.
 	public void take(int money) {
 		this.money += money;
 		peopleCount++;
 	}
 	
-	// ÁöÇÏÃ¶ Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ÇÔ¼ö.
+	// ì§€í•˜ì²  ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜.
 	public void showInfo() {
-		System.out.println("ÁöÇÏÃ¶ " + lineNum + "ÀÇ ½Â°´Àº " + peopleCount + 
-						   "¸íÀÌ°í, ¼öÀÔÀº " + money + "¿ø ÀÔ´Ï´Ù.");
+		System.out.println("ì§€í•˜ì²  " + lineNum + "ì˜ ìŠ¹ê°ì€ " + peopleCount + 
+				   "ëª…ì´ê³ , ìˆ˜ì…ì€ " + money + "ì› ì…ë‹ˆë‹¤.");
 	}
 
 }

@@ -1,36 +1,36 @@
 package classtest.cooperation;
 
 public class Student {
-	public String stuName; // ÇĞ»ı ÀÌ¸§
-	public int grade;	   // ÇĞ³â
-	public int money;	   // °¡Áø µ·
+	public String stuName;     // í•™ìƒ ì´ë¦„
+	public int grade;	   // í•™ë…„
+	public int money;	   // ê°€ì§„ ëˆ
 	
-	// »ı¼ºÀÚ.
+	// ìƒì„±ì.
 	public Student(String stuName, int money) {
 		this.stuName = stuName;
 		this.money = money;
 	}
 	
-	// ¹ö½º Å¸¸é 1,000¿øÀ» ÁöºÒÇÏ´Â ÇÔ¼ö.
+	// ë²„ìŠ¤ íƒ€ë©´ 1,000ì›ì„ ì§€ë¶ˆí•˜ëŠ” í•¨ìˆ˜.
 	public void takeBus(Bus bus) {
 		bus.take(1000);
 		this.money -= 1000;
 	}
 	
-	// ÁöÇÏÃ¶ Å¸¸é 1,000¿øÀ» ÁöºÒÇÏ´Â ÇÔ¼ö.
+	// ì§€í•˜ì²  íƒ€ë©´ 1,000ì›ì„ ì§€ë¶ˆí•˜ëŠ” í•¨ìˆ˜.
 	public void takeSubway(Subway subway) {
 		subway.take(1500);
 		this.money -= 1500;
 	}
 	
-	// ÅÃ½Ã Å¸¸é 10,000¿øÀ» ÁöºÒÇÏ´Â ÇÔ¼ö.
+	// íƒì‹œ íƒ€ë©´ 10,000ì›ì„ ì§€ë¶ˆí•˜ëŠ” í•¨ìˆ˜.
 	public void takeTaxi(Taxi taxi) {
 		taxi.take(10000);
 		this.money -= 10000;
 	}
 	
-	// ÇĞ»ıÀÇ ÇöÀç Á¤º¸¸¦ Ãâ·ÂÇÏ´Â ÇÔ¼ö.
+	// í•™ìƒì˜ í˜„ì¬ ì •ë³´ë¥¼ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜.
 	public void showInfo() {
-		System.out.println(stuName + "´ÔÀÇ ³²Àº µ·Àº " + money + "¿ø ÀÔ´Ï´Ù.");
+		System.out.println(stuName + "ë‹˜ì˜ ë‚¨ì€ ëˆì€ " + money + "ì› ì…ë‹ˆë‹¤.");
 	}
 }

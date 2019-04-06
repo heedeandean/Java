@@ -3,29 +3,29 @@ package classtest.cooperation;
 public class TakeTrans {
 	public static void main(String[] args) {
 		
-		// ÇĞ»ı 3¸í »ı¼º.
+		// í•™ìƒ 3ëª… ìƒì„±.
 		Student ha = new Student("ha", 5000);
 		Student heejin = new Student("heejin", 10000);
 		Student rara = new Student("rara", 10000);
 		
 		
-		Bus bus100 = new Bus(100); 				  // 100¹ø ¹ö½º »ı¼º
-		ha.takeBus(bus100);		   				  // ha°¡ 100¹ø ¹ö½º¸¦ Å½
-		ha.showInfo(); 			   				  // ha Á¤º¸ Ãâ·Â
-		bus100.showInfo(); 		   				  // ¹ö½º Á¤º¸ Ãâ·Â
+		Bus bus100 = new Bus(100); 				  // 100ë²ˆ ë²„ìŠ¤ ìƒì„±
+		ha.takeBus(bus100);		   		  	  // haê°€ 100ë²ˆ ë²„ìŠ¤ë¥¼ íƒ
+		ha.showInfo(); 			   			  // ha ì •ë³´ ì¶œë ¥
+		bus100.showInfo(); 		   			  // ë²„ìŠ¤ ì •ë³´ ì¶œë ¥
 		
 		System.out.println();
 		
-		Subway subwayGreen = new Subway("7È£¼±"); // 7È£¼± ÁöÇÏÃ¶ »ı¼º
-		heejin.takeSubway(subwayGreen);			  // heejinÀÌ 7È£¼± ÁöÇÏÃ¶ Å½
-		heejin.showInfo();						  // heejin Á¤º¸ Ãâ·Â
-		subwayGreen.showInfo();					  // ÁöÇÏÃ¶ Á¤º¸ Ãâ·Â
+		Subway subwayGreen = new Subway("7í˜¸ì„ "); 		 // 7í˜¸ì„  ì§€í•˜ì²  ìƒì„±
+		heejin.takeSubway(subwayGreen);			  	  // heejinì´ 7í˜¸ì„  ì§€í•˜ì²  íƒ
+		heejin.showInfo();					  // heejin ì •ë³´ ì¶œë ¥
+		subwayGreen.showInfo();					  // ì§€í•˜ì²  ì •ë³´ ì¶œë ¥
 		
 		System.out.println();
 		
-		Taxi taxi1 = new Taxi(1); 		 		 // 1¹ø ÅÃ½Ã »ı¼º
-		rara.takeTaxi(taxi1);			  	 	 // rara°¡ 1¹ø ÅÃ½Ã Å½
-		rara.showInfo();						 // rara Á¤º¸ Ãâ·Â
-		taxi1.showInfo();					 	 // ÅÃ½Ã Á¤º¸ Ãâ·Â
+		Taxi taxi1 = new Taxi(1); 		 		  // 1ë²ˆ íƒì‹œ ìƒì„±
+		rara.takeTaxi(taxi1);			  	 	  // raraê°€ 1ë²ˆ íƒì‹œ íƒ
+		rara.showInfo();					  // rara ì •ë³´ ì¶œë ¥
+		taxi1.showInfo();					  // íƒì‹œ ì •ë³´ ì¶œë ¥
 	}
 }

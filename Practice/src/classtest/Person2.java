@@ -5,7 +5,7 @@ public class Person2 {
 	float height;
 	float weight;
 	
-	public Person2() {} // µğÆúÆ® »ı¼ºÀÚ
+	public Person2() {} // ë””í´íŠ¸ ìƒì„±ì
 	
 	public Person2(String uname, float uheight, float uweight) {
 		name = uname;

@@ -15,8 +15,8 @@ public class DogArray {
 		}
 		
 		System.out.println();
-		System.out.println("=======향상된 for문=======");
 		
+		System.out.println("=======향상된 for문=======");
 		for(Dog dog : dogList) {
 			System.out.println(dog.showDogInfo());
 		}

@@ -1,8 +1,8 @@
-package test;
+package classtest;
 
 import java.util.ArrayList;
 
-// 상위 클래스
+//상위 클래스
 class Animal {
 	public void move() {
 		System.out.println("동물이 움직인다.");
@@ -10,7 +10,7 @@ class Animal {
 }
 
 
-// 하위 클래스
+//하위 클래스
 class Human extends Animal {
 	public void move() {
 		System.out.println("사람이 두발로 걷는다.");
@@ -42,11 +42,11 @@ class Eagle extends Animal {
 }
 
 
-public class AnimalTest {
+public class polymorphismTest {
 	ArrayList<Animal> aniList = new ArrayList<Animal>();
 
 	public static void main(String[] args) {
-		AnimalTest atest = new AnimalTest();
+		polymorphismTest atest = new polymorphismTest();
 		atest.addAnimal();
 		
 		System.out.println();

@@ -1,7 +1,8 @@
-package test;
+package classtest.template;
 
 public abstract class Car {
 	public abstract void drive();
+	public abstract void wiper();
 	public abstract void stop();
 	
 	public void startCar() {
@@ -15,6 +16,7 @@ public abstract class Car {
 	final public void run() {
 		startCar();
 		drive();
+		wiper();
 		stop();
 		turnOff();
 	}

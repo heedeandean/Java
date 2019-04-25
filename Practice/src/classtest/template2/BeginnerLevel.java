@@ -1,6 +1,6 @@
-package test;
+package classtest.template2;
 
-public class BeginnerLevel extends PLevel {
+public class BeginnerLevel extends PLevel{
 
 	@Override
 	public void run() {
@@ -9,17 +9,16 @@ public class BeginnerLevel extends PLevel {
 
 	@Override
 	public void jump() {
-		System.out.println("점프 못함 ㅠㅠ");
+		System.out.println("점프 못함ㅠㅠ");
 	}
 
 	@Override
 	public void turn() {
-		System.out.println("턴 못함 ㅜㅠㅠ");
+		System.out.println("턴 못함ㅠㅠ");
 	}
 
 	@Override
 	public void showLevelMsg() {
 		System.out.println("==초보자 레벨==");
 	}
-	
 }

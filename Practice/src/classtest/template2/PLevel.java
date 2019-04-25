@@ -1,4 +1,4 @@
-package test;
+package classtest.template2;
 
 public abstract class PLevel {
 	public abstract void run();
@@ -8,9 +8,11 @@ public abstract class PLevel {
 	
 	final public void go(int cnt) {
 		run();
+		
 		for(int i=0; i<cnt; i++) {
 			jump();
 		}
+		
 		turn();
 	}
 }

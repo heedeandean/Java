@@ -1,6 +1,6 @@
-package test;
+package classtest.template2;
 
-public class SuperLevel extends PLevel {
+public class SuperLevel extends PLevel{
 
 	@Override
 	public void run() {
@@ -9,7 +9,7 @@ public class SuperLevel extends PLevel {
 
 	@Override
 	public void jump() {
-		System.out.println("아주 높이 점프!");
+		System.out.println("아주 높이 점프합니다.");
 	}
 
 	@Override
@@ -21,5 +21,4 @@ public class SuperLevel extends PLevel {
 	public void showLevelMsg() {
 		System.out.println("==고급자 레벨==");
 	}
-	
 }

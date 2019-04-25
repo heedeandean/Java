@@ -1,19 +1,21 @@
-package test;
+package classtest.template2;
 
-public class MainBoard {
+public class MainTest {
 
 	public static void main(String[] args) {
 		Player player = new Player();
-		player.play(3);
+		player.play(1);
+		
+		System.out.println();
 		
 		AdvancedLevel aLevel = new AdvancedLevel();
 		player.upgradeLevel(aLevel);
 		player.play(2);
 		
+		System.out.println();
+		
 		SuperLevel sLevel = new SuperLevel();
 		player.upgradeLevel(sLevel);
 		player.play(3);
-		
 	}
-
 }

@@ -15,6 +15,11 @@ public class CompleteCalc extends Calculator {
 			return Calc.ERROR;
 	}
 	
+	@Override
+	public int square(int n1) {
+		return n1 * n1;
+	}
+
 	public void showInfo() {
 		System.out.println("Calc 인터페이스 구현");
 	}

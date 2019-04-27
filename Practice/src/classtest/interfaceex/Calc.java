@@ -8,5 +8,5 @@ public interface Calc {
 	int sub(int n1, int n2);
 	int mul(int n1, int n2);
 	int div(int n1, int n2);
-
+	int square(int n1);
 }

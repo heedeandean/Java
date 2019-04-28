@@ -1,4 +1,4 @@
-package test;
+package classtest.interfaceex2;
 
 import java.io.IOException;
 
@@ -9,6 +9,7 @@ public class ST {
 		System.out.println("R : 한명씩 차례로 할당");
 		System.out.println("L : 쉬고 있거나 대기가 가장 적은 상담원에게 할당");
 		System.out.println("P : 우선순위가 높은 고객 먼저 할당");
+		System.out.println("A : 상담원이 전화를 가져옴");
 		
 		int ch = System.in.read();
 		Scheduler s = null;
@@ -21,6 +22,9 @@ public class ST {
 		}
 		else if(ch == 'P' || ch == 'p') {
 			s = new PriorityAllocation();
+		}
+		else if(ch == 'A' || ch == 'a') {
+			s = new AgentGetCall();
 		}
 		else {
 			System.out.println("지원되지 않는 기능입니다.");

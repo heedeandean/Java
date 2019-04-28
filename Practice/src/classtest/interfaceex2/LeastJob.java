@@ -1,4 +1,4 @@
-package test;
+package classtest.interfaceex2;
 
 public class LeastJob implements Scheduler {
 

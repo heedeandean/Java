@@ -15,5 +15,6 @@ public class CT {
 		System.out.println(calc.square(n1));
 	
 		calc.showInfo();
+		calc.description();
 	}
 }

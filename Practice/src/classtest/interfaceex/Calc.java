@@ -9,4 +9,8 @@ public interface Calc {
 	int mul(int n1, int n2);
 	int div(int n1, int n2);
 	int square(int n1);
+	
+	default void description() {
+		System.out.println("정수 계산기를 구현합니다.");
+	}
 }

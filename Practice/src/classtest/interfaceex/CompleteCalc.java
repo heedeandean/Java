@@ -26,6 +26,7 @@ public class CompleteCalc extends Calculator {
 
 	@Override
 	public void description() {
-		super.description();
+//		super.description();
+		System.out.println("디폴드 메서드 재정의");
 	}
 }

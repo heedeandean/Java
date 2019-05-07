@@ -3,7 +3,7 @@ package classtest.singleton;
 public class CarFactoryTest {
 
 	public static void main(String[] args) {
-		CarFactory factory = CarFactory.getInstance(); // ½Ì±ÛÅæ ÆÐÅÏ
+		CarFactory factory = CarFactory.getInstance(); // ì‹±ê¸€í†¤ 
 		
 		Car heeAudi = factory.createCar();
 		Car jinAudi = factory.createCar();

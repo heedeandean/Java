@@ -14,7 +14,7 @@ public class Customer {
 		String message = sCafe.brewing(4000);
 		if(message != null) {
 			this.money -= money;
-			System.out.println(cusName + "´ÔÀÌ " + money + "¿ø À¸·Î " + message);
+			System.out.println(cusName + "ë‹˜ì´ " + money + "ì› ìœ¼ë¡œ " + message);
 		}
 	}
 	
@@ -22,7 +22,7 @@ public class Customer {
 		String message = cCafe.brewing(4500);
 		if(message != null) {
 			this.money -= money;
-			System.out.println(cusName + "´ÔÀÌ " + money + "¿ø À¸·Î " + message);
+			System.out.println(cusName + "ë‹˜ì´ " + money + "ì› ìœ¼ë¡œ " + message);
 		}
 	}
 	

@@ -24,8 +24,11 @@ class Student {
 		}
 		return false;
 	}
-	
-	
+
+	@Override
+	public int hashCode() {
+		return stuID;
+	}
 }
 
 public class ET {
@@ -54,5 +57,12 @@ public class ET {
 			System.out.println("hee1, jin의 주소는 같습니다.");
 		else
 			System.out.println("hee1, jin의 주소는 다릅니다.");
+		
+		System.out.println("hee1의 hashCode : " + hee1.hashCode());
+		System.out.println("jin의 hashCode : " + jin.hashCode());
+		
+		System.out.println("hee1의 실제 주소 값 : " + System.identityHashCode(hee1));
+		System.out.println("jin의 실제 주소 값 : " + System.identityHashCode(jin));
+		
 	}
 }

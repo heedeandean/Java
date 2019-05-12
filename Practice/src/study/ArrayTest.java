@@ -10,6 +10,6 @@ public class ArrayTest {
 			sum += num[i];
 		}
 		
-		System.out.println("¹è¿­ÀÇ ¸ğµç ¿ä¼Ò ÇÕÀº " + sum);
+		System.out.println("ë°°ì—´ì˜ ëª¨ë“  ìš”ì†Œ í•©ì€ " + sum);
 	}
 }

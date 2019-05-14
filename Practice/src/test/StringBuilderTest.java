@@ -17,7 +17,7 @@ public class StringBuilderTest {
 		
 		heeStr = buffer.toString();
 		System.out.println(heeStr);
-		System.out.println("연결된 heeStr 문자열 주소 : " + System.identityHashCode(heeStr));
+		System.out.println("새로 만들어진 heeStr 문자열 주소 : " + System.identityHashCode(heeStr));
 	}
 
 }

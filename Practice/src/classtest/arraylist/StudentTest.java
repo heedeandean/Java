@@ -5,13 +5,13 @@ public class StudentTest {
 	public static void main(String[] args) {
 		
 		Student lee = new Student(1001, "Lee");
-		lee.addSub("±¹¾î", 100);
-		lee.addSub("¼öÇĞ", 50);
+		lee.addSub("êµ­ì–´", 100);
+		lee.addSub("ìˆ˜í•™", 50);
 		
 		Student kim = new Student(1002, "kim");
-		kim.addSub("±¹¾î", 70);
-		kim.addSub("¼öÇĞ", 85);
-		kim.addSub("¿µ¾î", 100);
+		kim.addSub("êµ­ì–´", 70);
+		kim.addSub("ìˆ˜í•™", 85);
+		kim.addSub("ì˜ì–´", 100);
 		
 		lee.showStuInfo();
 		System.out.println("=================================");

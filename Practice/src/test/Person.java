@@ -1,0 +1,29 @@
+package test;
+
+public class Person {
+	String name;
+	int money;
+	
+	public Person(String name, int money) {
+		this.name = name;
+		this.money = money;
+	}
+	
+	public void buysCoffee(StarCoffee sCoffee, int money) {
+		String message = sCoffee.bb(4000);
+		
+		if(message != null) {
+			this.money -= money;
+			System.out.println(name +  "님이 " + money + "원 으로 " + message);
+		}
+	}
+	
+	public void buybCoffee(BeanCoffee bCoffee, int money) {
+		String message = bCoffee.bb(4500);
+		
+		if(message != null) {
+			this.money -= money;
+			System.out.println(name +  "님이 " + money + "원 으로 " + message);
+		}
+	}
+}

@@ -4,7 +4,7 @@ public class CharArray {
 
 	public static void main(String[] args) {
 		
-		// ´ë¹®ÀÚ -> ¼Ò¹®ÀÚ 
+		// ëŒ€ë¬¸ì -> ì†Œë¬¸ì
 		char[] alp = new char[26];
 		char ch= 'A';
 		

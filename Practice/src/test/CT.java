@@ -1,5 +1,7 @@
 package test;
 
+import classtest.classex.Person;
+
 public class CT {
 
 	public static void main(String[] args) throws ClassNotFoundException {

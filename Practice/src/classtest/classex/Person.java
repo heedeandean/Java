@@ -1,4 +1,4 @@
-package test;
+package classtest.classex;
 
 public class Person {
 	private String name;

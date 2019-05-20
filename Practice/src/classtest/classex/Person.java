@@ -1,15 +1,18 @@
 package classtest.classex;
 
 public class Person {
+	
 	private String name;
 	private int age;
 	
-	public Person() {}
+	public Person() {} // 디폴트 생성자 
 	
+	// 생성자
 	public Person(String name) {
 		this.name = name;
 	}
 	
+	// 생성자
 	public Person(String name, int age) {
 		this.name = name;
 		this.age = age;

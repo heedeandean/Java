@@ -51,6 +51,6 @@ public class Customer {
 		this.cusName = cusName;
 		cusGrade = "SILVER";
 		bonusRatio = 0.01;
-		System.out.println("Customer(int cusID, String cusName) 생성자 호출");
+//		System.out.println("Customer(int cusID, String cusName) 생성자 호출");
 	}
 }

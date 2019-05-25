@@ -1,6 +1,6 @@
 package test;
 
-public class GP<T> {
+public class GP<T extends Material> {
 	private T material;
 
 	public T getMaterial() {
@@ -13,5 +13,9 @@ public class GP<T> {
 	
 	public String toString() {
 		return material.toString();
+	}
+	
+	public void printing() {
+		material.doPrinting();
 	}
 }

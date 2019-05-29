@@ -1,4 +1,4 @@
-package test.collection;
+package classtest.collectionframework.collection;
 
 public class Member {
 	private int memberId;

@@ -1,6 +1,7 @@
 package classtest.collectionframework.collection.arraylist;
 
 import java.util.ArrayList;
+
 import classtest.collectionframework.collection.Member;
 
 public class MemberArrayList {
@@ -10,10 +11,21 @@ public class MemberArrayList {
 		arrayList = new ArrayList<Member>();
 	}
 	
+	// 회원 추가 메서드
 	public void addMember(Member member) {
 		arrayList.add(member);
 	}
 	
+	// 특정 위치에 회원 추가 메서드
+	public void insertMember(Member member, int index) {
+		if(index < 0 || index > arrayList.size()) {
+			System.out.println("입력한 index위치에 추가할 수 없습니다.");
+			return;
+		}
+		arrayList.add(index, member);
+	}
+	
+	// 회원 제거 메서드
 	public boolean removeMember(int memberId) {
 		for(int i=0; i<arrayList.size(); i++) {
 			Member member = arrayList.get(i);

@@ -6,11 +6,11 @@ public abstract class Car {
 	public abstract void stop();
 	
 	public void startCar() {
-		System.out.println("½Ãµ¿À» ÄÔ");
+		System.out.println("ì‹œë™ì„ ì¼¬");
 	}
 	
 	public void turnOff() {
-		System.out.println("½Ãµ¿À» ²û");
+		System.out.println("ì‹œë™ì„ ë”");
 	}
 	
 	final public void run() {

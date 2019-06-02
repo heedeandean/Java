@@ -4,21 +4,17 @@ public class MCar extends Car {
 
 	@Override
 	public void drive() {
-		System.out.println("»ç¶÷ÀÌ ¿îÀü");
-		System.out.println("»ç¶÷ÀÌ ÇÚµéÀ» Á¶ÀÛ");
+		System.out.println("ì‚¬ëŒì´ ìš´ì „");
+		System.out.println("ì‚¬ëŒì´ í•¸ë“¤ì„ ì¡°ì‘");
 	}
 
 	@Override
 	public void wiper() {
-		System.out.println("»ç¶÷ÀÌ ºü¸£±â¸¦ Á¶Àı");
+		System.out.println("ì‚¬ëŒì´ ë¹ ë¥´ê¸°ë¥¼ ì¡°ì ˆ");
 	}
 	
 	@Override
 	public void stop() {
-		System.out.println("ºê·¹ÀÌÅ©·Î Á¤Áö");
+		System.out.println("ë¸Œë ˆì´í¬ë¡œ ì •ì§€");
 	}
-
-
-	
-	
 }

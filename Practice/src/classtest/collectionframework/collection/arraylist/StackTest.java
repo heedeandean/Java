@@ -32,6 +32,6 @@ public class StackTest {
 		System.out.println(s.pop());
 		System.out.println(s.pop());
 		System.out.println(s.pop());
+		System.out.println(s.pop());
 	}
-
 }

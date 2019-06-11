@@ -1,4 +1,4 @@
-package classtest.collectionframework.collection.treeset;
+package collectionframework.collection.treeset;
 
 import java.util.TreeSet;
 

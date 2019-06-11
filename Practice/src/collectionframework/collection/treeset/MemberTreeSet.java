@@ -1,30 +1,29 @@
-package classtest.collectionframework.collection.hashset;
+package collectionframework.collection.treeset;
 
-import java.util.HashSet;
 import java.util.Iterator;
+import java.util.TreeSet;
 
-import classtest.collectionframework.collection.Member;
+import collectionframework.collection.Member;
 
-public class MemberHashSet {
-	private HashSet<Member> h;
+public class MemberTreeSet {
+	private TreeSet<Member> treeSet;
 	
-	public MemberHashSet() {
-		h = new HashSet<Member>();
+	public MemberTreeSet() {
+		treeSet = new TreeSet<Member>();
 	}
 	
 	public void addMember(Member member) {
-		h.add(member);
+		treeSet.add(member);
 	}
 	
 	public boolean removeMember(int memberId) {
-		Iterator<Member> ir = h.iterator();
+		Iterator<Member> ir = treeSet.iterator();
 		
 		while(ir.hasNext()) {
 			Member member = ir.next();
-			
 			int tempId = member.getMemberId();
 			if(tempId == memberId) {
-				h.remove(member);
+				treeSet.remove(member);
 				return true;
 			}
 		}
@@ -33,7 +32,7 @@ public class MemberHashSet {
 	}
 	
 	public void showAllMember() {
-		for(Member member : h) {
+		for(Member member : treeSet) {
 			System.out.println(member);
 		}
 		System.out.println();

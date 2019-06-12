@@ -53,7 +53,9 @@ public class Member implements Comparable<Member> {
 //		return (this.memberId - member.memberId); // memberId 오름차순 
 //		return (this.memberId - member.memberId) * (-1); // memberId 내림차순
 		
+		return this.memberName.compareTo(member.memberName);
+		
 		// memberName 오름차순
-		return this.memberName.compareTo(member.memberName); // String 클래스에 compareTo() 가 정의되어 있으므로 활용
+//		return this.memberName.compareTo(member.memberName); // String 클래스에 compareTo() 가 정의되어 있으므로 활용
 	}
 }

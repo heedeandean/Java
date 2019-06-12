@@ -15,7 +15,7 @@ public class MemberTreeSetTest {
 		mts.addMember(m3);
 		mts.showAllMember();
 		
-		Member m4 = new Member(1, "중복");
+		Member m4 = new Member(1, "하하");
 		mts.addMember(m4);
 		mts.showAllMember();
 	}

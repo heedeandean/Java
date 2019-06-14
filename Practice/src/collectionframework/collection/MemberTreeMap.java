@@ -1,22 +1,22 @@
 package collectionframework.collection;
 
-import java.util.HashMap;
 import java.util.Iterator;
+import java.util.TreeMap;
 
-public class MemberHashMap {
-	private HashMap<Integer, Member> h;
+public class MemberTreeMap {
+	private TreeMap<Integer, Member> treeMap;
 	
-	public MemberHashMap() {
-		h = new HashMap<Integer, Member>();
+	public MemberTreeMap() {
+		treeMap = new TreeMap<Integer, Member>();
 	}
 	
 	public void addMember(Member member) {
-		h.put(member.getMemberId(), member);
+		treeMap.put(member.getMemberId(), member);
 	}
 	
 	public boolean removeMember(int memberId) {
-		if(h.containsKey(memberId)) {
-			h.remove(memberId);
+		if(treeMap.containsKey(memberId)) {
+			treeMap.remove(memberId);
 			return true;
 		}
 		System.out.println(memberId + "가 존재하지 않습니다.");
@@ -24,11 +24,10 @@ public class MemberHashMap {
 	}
 	
 	public void showAllMember() {
-		Iterator<Integer> ir = h.keySet().iterator();
-		
+		Iterator<Integer> ir = treeMap.keySet().iterator();
 		while(ir.hasNext()) {
 			int key = ir.next();
-			Member member = h.get(key);
+			Member member = treeMap.get(key);
 			System.out.println(member);
 		}
 		System.out.println();

@@ -1,15 +1,35 @@
 package test;
 
+// 외부 클래스
 class OutClass {
 	private int num = 10;
 	private static int sNum = 20;
+	
+	// 정적 내부클래스
+ 	static class InStaticClass {
+		int inNum = 100;
+		static int sInNum = 200;
+		
+		void inTest() {
+			System.out.println("정적 내부클래스 inNum = " + inNum + "(내부 클래스의 인스턴스 변수 사용)");
+			System.out.println("정적 내부클래스 sInNum = " + sInNum + "(내부 클래스의 정적 변수 사용)");
+			System.out.println("외부 클래스 sNum = " + sNum + "(외부 클래스의 정적 변수 사용)");
+		}
+		
+		// 정적 메서드
+		static void sTest() {
+			System.out.println("정적 내부클래스 sInNum = " + sInNum + "(내부 클래스의 정적 변수 사용)");
+			System.out.println("외부 클래스 sNum = " + sNum + "(외부 클래스의 정적 변수 사용)");
+		}
+	}
 	
 	private InClass inClass;
 	
 	public OutClass() {
 		inClass = new InClass();
 	}
-
+	
+	// 인스턴스 내부 클래스
 	class InClass {
 		int inNum = 100;
 		
@@ -26,8 +46,18 @@ class OutClass {
 
 public class InnerTest {
 	public static void main(String[] args) {
-		OutClass outClass = new OutClass();
-		System.out.println("외부 클래스 이용하여 내부 클래스 기능 호출");
-		outClass.usingClass();
+//		OutClass outClass = new OutClass();
+//		System.out.println("외부 클래스 이용하여 내부 클래스 기능 호출");
+//		outClass.usingClass();
+		
+		OutClass.InStaticClass sInClass = new OutClass.InStaticClass();
+		
+		System.out.println("정적 내부 클래스 일반 메서드 호출");
+		sInClass.inTest();
+		
+		System.out.println();
+		
+		System.out.println("정적 내부 클래스 정적 메서드 호출");
+		OutClass.InStaticClass.sTest();
 	}
 }

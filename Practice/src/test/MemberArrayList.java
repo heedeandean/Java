@@ -1,8 +1,7 @@
-package classtest.collectionframework.collection.arraylist;
+package test;
 
 import java.util.ArrayList;
 
-import classtest.collectionframework.collection.Member;
 
 public class MemberArrayList {
 	private ArrayList<Member> arrayList;
@@ -16,7 +15,6 @@ public class MemberArrayList {
 		arrayList.add(member);
 	}
 	
-	// 특정 위치에 회원 추가 메서드
 	public void insertMember(Member member, int index) {
 		if(index < 0 || index > arrayList.size()) {
 			System.out.println("존재하지 않는 index값입니다!");

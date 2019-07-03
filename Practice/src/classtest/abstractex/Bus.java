@@ -1,19 +1,19 @@
 package classtest.abstractex;
 
 public class Bus extends Car {
-	
-	// Ãß»ó ¸Þ¼­µå ±¸Çö
+
+	// ï¿½ß»ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	@Override
 	public void run() {
-		System.out.println("¹ö½º°¡ ´Þ¸³´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¸ï¿½ï¿½Ï´ï¿½.");
 	}
 
 	@Override
 	public void refuel() {
-		System.out.println("Ãµ¿¬ °¡½º¸¦ ÃæÀüÇÕ´Ï´Ù.");
+		System.out.println("Ãµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.");
 	}
-	
+
 	public void takePassenger() {
-		System.out.println("½Â°´À» ¹ö½º¿¡ ÅÂ¿ó´Ï´Ù.");
+		System.out.println("ï¿½Â°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Â¿ï¿½Ï´ï¿½.");
 	}
 }

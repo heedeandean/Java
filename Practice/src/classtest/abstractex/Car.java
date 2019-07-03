@@ -1,14 +1,15 @@
 package classtest.abstractex;
 
-// Ãß»ó Å¬·¡½º
+// ï¿½ß»ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½
 public abstract class Car {
-	
-	// Ãß»ó ¸Þ¼­µå
+
+	// ï¿½ß»ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½
 	public abstract void run();
+
 	public abstract void refuel();
-	
-	// ±¸Çö ¸Þ¼­µå
+
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Þ¼ï¿½ï¿½ï¿½
 	public void stop() {
-		System.out.println("Â÷°¡ ¸ØÃä´Ï´Ù.");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 	}
 }

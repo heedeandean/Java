@@ -9,7 +9,7 @@ public class BubbleSort implements Sort {
 
 	@Override
 	public void desc(int[] arr) {
-		System.out.println("BubbleSort 내림차순");		
+		System.out.println("BubbleSort 내림차순");
 	}
 
 	@Override

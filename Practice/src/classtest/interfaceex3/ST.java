@@ -9,27 +9,24 @@ public class ST {
 		System.out.println("B : BubbleSort");
 		System.out.println("H : HeapSort");
 		System.out.println("Q : QuickSort");
-		
+
 		int ch = System.in.read();
 		Sort sort = null;
-		
-		if(ch == 'B' || ch == 'b') {
+
+		if (ch == 'B' || ch == 'b') {
 			sort = new BubbleSort();
-		}
-		else if(ch == 'H' || ch == 'h') {
+		} else if (ch == 'H' || ch == 'h') {
 			sort = new HeapSort();
-		}
-		else if(ch == 'Q' || ch == 'q') {
+		} else if (ch == 'Q' || ch == 'q') {
 			sort = new QuickSort();
-		}
-		else {
+		} else {
 			System.out.println("지원되지 않는 기능입니다.");
 			return;
 		}
-		
+
 		int[] arr = new int[10];
 		sort.asc(arr);
 		sort.desc(arr);
 		sort.description();
-	}					
+	}
 }

@@ -9,7 +9,7 @@ public class HeapSort implements Sort {
 
 	@Override
 	public void desc(int[] arr) {
-		System.out.println("HeapSort 내림차순");		
+		System.out.println("HeapSort 내림차순");
 	}
 
 	@Override
@@ -18,4 +18,3 @@ public class HeapSort implements Sort {
 		System.out.println("HeapSort입니다.");
 	}
 }
-

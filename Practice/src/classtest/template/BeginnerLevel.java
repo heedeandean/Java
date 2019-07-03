@@ -1,6 +1,6 @@
-package classtest.template2;
+package classtest.template;
 
-public class BeginnerLevel extends PLevel{
+public class BeginnerLevel extends PLevel {
 
 	@Override
 	public void run() {

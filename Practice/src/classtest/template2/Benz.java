@@ -1,4 +1,4 @@
-package classtest.template3;
+package classtest.template2;
 
 public class Benz extends Car {
 
@@ -22,4 +22,3 @@ public class Benz extends Car {
 		System.out.println("Benz 시동을 끕니다.");
 	}
 }
-

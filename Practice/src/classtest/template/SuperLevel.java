@@ -1,6 +1,6 @@
-package classtest.template2;
+package classtest.template;
 
-public class SuperLevel extends PLevel{
+public class SuperLevel extends PLevel {
 
 	@Override
 	public void run() {

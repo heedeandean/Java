@@ -3,7 +3,7 @@ package study;
 class Student {
 	int stuID;
 	String stuName;
-	
+
 	Student(int stuID, String stuName) {
 		this.stuID = stuID;
 		this.stuName = stuName;
@@ -19,7 +19,7 @@ public class ToStringEx {
 
 	public static void main(String[] args) {
 		Student stu = new Student(1, "heedean");
-		
+
 		System.out.println(stu);
 		System.out.println(stu.toString());
 	}

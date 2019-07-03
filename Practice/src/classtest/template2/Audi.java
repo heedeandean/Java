@@ -1,4 +1,4 @@
-package classtest.template3;
+package classtest.template2;
 
 public class Audi extends Car {
 

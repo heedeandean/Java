@@ -6,17 +6,18 @@ public class CarFactory {
 
 	private static CarFactory instance = new CarFactory();
 	HashMap<String, Car> hashMap = new HashMap<>();
-	
-	public CarFactory() {}
+
+	public CarFactory() {
+	}
 
 	public static CarFactory getInstance() {
 		if (instance == null)
 			instance = new CarFactory();
 		return instance;
 	}
-	
+
 	public Car createCar(String name) {
-		if(hashMap.containsKey(name)) {
+		if (hashMap.containsKey(name)) {
 			return hashMap.get(name);
 		}
 		Car car = new Car();

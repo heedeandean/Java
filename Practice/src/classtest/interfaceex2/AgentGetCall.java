@@ -1,7 +1,7 @@
 package classtest.interfaceex2;
 
 public class AgentGetCall implements Scheduler {
-	
+
 	@Override
 	public void getNextCall() {
 		System.out.println("상담원이 다음 전화 요청");

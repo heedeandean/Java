@@ -10,27 +10,23 @@ public class ST {
 		System.out.println("L : 쉬고 있거나 대기가 가장 적은 상담원에게 할당");
 		System.out.println("P : 우선순위가 높은 고객 먼저 할당");
 		System.out.println("A : 상담원이 전화를 가져옴");
-		
+
 		int ch = System.in.read();
 		Scheduler s = null;
-		
-		if(ch == 'R' || ch == 'r') {
+
+		if (ch == 'R' || ch == 'r') {
 			s = new RoundRobin();
-		}
-		else if(ch == 'L' || ch == 'l') {
+		} else if (ch == 'L' || ch == 'l') {
 			s = new LeastJob();
-		}
-		else if(ch == 'P' || ch == 'p') {
+		} else if (ch == 'P' || ch == 'p') {
 			s = new PriorityAllocation();
-		}
-		else if(ch == 'A' || ch == 'a') {
+		} else if (ch == 'A' || ch == 'a') {
 			s = new AgentGetCall();
-		}
-		else {
+		} else {
 			System.out.println("지원되지 않는 기능입니다.");
 			return;
 		}
-		
+
 		s.getNextCall();
 		s.sendCallToAgent();
 	}

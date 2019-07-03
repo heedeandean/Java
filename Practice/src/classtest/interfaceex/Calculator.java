@@ -12,5 +12,4 @@ public abstract class Calculator implements Calc {
 		return n1 - n2;
 	}
 
-
 }

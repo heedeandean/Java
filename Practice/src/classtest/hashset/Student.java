@@ -3,7 +3,7 @@ package classtest.hashset;
 public class Student {
 	String stuId;
 	String stuName;
-	
+
 	public Student(String stuId, String stuName) {
 		this.stuId = stuId;
 		this.stuName = stuName;
@@ -16,9 +16,9 @@ public class Student {
 
 	@Override
 	public boolean equals(Object obj) {
-		if(obj instanceof Student) {
-			Student std = (Student)obj;
-			if(this.stuId == std.stuId)
+		if (obj instanceof Student) {
+			Student std = (Student) obj;
+			if (this.stuId == std.stuId)
 				return true;
 			else
 				return false;

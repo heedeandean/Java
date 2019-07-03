@@ -1,32 +1,33 @@
 package classtest.arraylist;
+
 import java.util.ArrayList;
 
 public class Student {
 	int stuID;
 	String stuName;
 	ArrayList<Subject> subList;
-	
+
 	public Student(int stuID, String stuName) {
 		this.stuID = stuID;
 		this.stuName = stuName;
 		subList = new ArrayList<Subject>();
 	}
-	
+
 	public void addSub(String name, int score) {
 		Subject sub = new Subject();
 		sub.setName(name);
 		sub.setScore(score);
 		subList.add(sub);
 	}
-	
+
 	public void showStuInfo() {
 		int total = 0;
-		
-		for(Subject s : subList) {
+
+		for (Subject s : subList) {
 			total += s.getScore();
-			System.out.println("ÇÐ»ý " + stuName +"ÀÇ " + s.getName() + " ¼ºÀûÀº " + s.getScore() + "Á¡ ÀÔ´Ï´Ù.");
+			System.out.println("ï¿½Ð»ï¿½ " + stuName + "ï¿½ï¿½ " + s.getName() + " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + s.getScore() + "ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.");
 		}
 		System.out.println();
-		System.out.println("ÇÐ»ý " + stuName + "ÀÇ ÃÑÁ¡Àº " + total + "Á¡ ÀÔ´Ï´Ù.");
+		System.out.println("ï¿½Ð»ï¿½ " + stuName + "ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + total + "ï¿½ï¿½ ï¿½Ô´Ï´ï¿½.");
 	}
 }

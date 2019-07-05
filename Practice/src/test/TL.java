@@ -11,10 +11,17 @@ public class TL {
 		l.showString("하이 람다1");
 		showMyString(l);
 
+		PrintString ps = returnString();
+		ps.showString("hello ");
+
 	}
 
 	public static void showMyString(PrintString p) {
 		p.showString("하이 람다2");
+	}
+
+	public static PrintString returnString() {
+		return s -> System.out.println(s + "world");
 	}
 
 }

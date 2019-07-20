@@ -1,24 +1,34 @@
 package test;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.function.BinaryOperator;
+
+class CompareString implements BinaryOperator<String> {
+
+	@Override
+	public String apply(String s1, String s2) {
+		if (s1.getBytes().length >= s2.getBytes().length)
+			return s1;
+		else
+			return s2;
+	}
+
+}
 
 public class Test {
 
 	public static void main(String[] args) {
-		List<String> sList = new ArrayList<String>();
-		sList.add("희딘");
-		sList.add("영신");
-		sList.add("유나");
+		String[] greetings = { "안녕하세요", "하이하이", "hellodsdfsdfsdf" };
 
-		Stream<String> stream = sList.stream();
-		stream.forEach(s -> System.out.println(s + " "));
+		System.out.println(Arrays.stream(greetings).reduce("", (s1, s2) -> {
+			if (s1.getBytes().length >= s2.getBytes().length)
+				return s1;
+			else
+				return s2;
+		}));
 
-		System.out.println();
-
-		sList.stream().sorted().forEach(s -> System.out.println(s));
-
+		String str = Arrays.stream(greetings).reduce(new CompareString()).get();
+		System.out.println(str);
 	}
 
 }

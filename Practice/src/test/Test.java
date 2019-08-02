@@ -1,20 +1,22 @@
 package test;
 
-import java.io.IOException;
+import java.util.Scanner;
 
 public class Test {
 
-	public static void main(String[] args) throws IOException {
-		System.out.println("알파벳 하나를 쓰고 [Enter]를 누르세요.");
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
 		
-		int i;
-		try {
-			while((i = System.in.read()) != -1) {
-				System.out.print((char)i);
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		System.out.println("이름:");
+		String name = s.nextLine();
+		System.out.println("직업:");
+		String job = s.nextLine();
+		System.out.println("사번:");
+		int num = s.nextInt();
+		
+		System.out.println(name);
+		System.out.println(job);
+		System.out.println(num);
 	}
 
 }

@@ -1,24 +1,19 @@
 package test;
 
-import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class Test {
 
 	public static void main(String[] args) {
-		try (FileInputStream fis = new FileInputStream("input.txt")) {
-			byte[] bs = new byte[10];
-			int i;
-			while ((i = fis.read(bs)) != -1) {
-				for (int k = 0; k < i; k++) {
-					System.out.print((char) bs[k]);
-				}
-				System.out.println(": " + i + "바이트 읽음");
-			}
+		try (FileOutputStream fos = new FileOutputStream("output.txt")) {
+			fos.write(65);
+			fos.write(66);
+			fos.write(67);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("end");
+		System.out.println("출력이 완료되었습니다.");
 	}
 
 }

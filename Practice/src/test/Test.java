@@ -6,15 +6,14 @@ import java.io.IOException;
 public class Test {
 
 	public static void main(String[] args) throws IOException {
-		FileOutputStream fos = new FileOutputStream("output2.txt", true);
-		try (fos) {
+		try (FileOutputStream fos = new FileOutputStream("output.txt", true)) {
 			byte[] bs = new byte[26];
 			byte data = 65;
 			for (int i = 0; i < bs.length; i++) {
 				bs[i] = data;
 				data++;
 			}
-			fos.write(bs);
+			fos.write(bs, 2, 10);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

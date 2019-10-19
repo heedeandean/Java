@@ -1,7 +1,7 @@
 package test;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -9,22 +9,26 @@ import java.io.IOException;
 public class Test {
 
 	public static void main(String[] args) {
-		long millisecond = 0;
-		try (FileInputStream fis = new FileInputStream("a.zip");
-				FileOutputStream fos = new FileOutputStream("copy.zip");
-				BufferedInputStream bis = new BufferedInputStream(fis);
-				BufferedOutputStream bos = new BufferedOutputStream(fos)) {
-			millisecond = System.currentTimeMillis();
-			int i;
-			while ((i = bis.read()) != -1) {
-				bos.write(i);
-			}
-			millisecond = System.currentTimeMillis() - millisecond;
+		try (FileOutputStream fos = new FileOutputStream("data.txt");
+				DataOutputStream dos = new DataOutputStream(fos)) {
+			dos.writeByte(100);
+			dos.writeChar('A');
+			dos.writeInt(10);
+			dos.writeFloat(3.14f);
+			dos.writeUTF("Test");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		try (FileInputStream fis = new FileInputStream("data.txt"); DataInputStream dis = new DataInputStream(fis)) {
+			System.out.println(dis.readByte());
+			System.out.println(dis.readChar());
+			System.out.println(dis.readInt());
+			System.out.println(dis.readFloat());
+			System.out.println(dis.readUTF());
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("파일 복사하는데 " + millisecond + " millisecond 소요되었습니다.");
 	}
 
 }

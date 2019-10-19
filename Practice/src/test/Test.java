@@ -1,25 +1,20 @@
 package test;
 
 import java.io.FileInputStream;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Test {
 
 	public static void main(String[] args) {
-		try (FileWriter fw = new FileWriter("writer.txt")) {
-			fw.write('A');
-			char buf[] = { 'B', 'C', 'D' };
-
-			fw.write(buf);
-			fw.write("하이요");
-			fw.write(buf, 1, 2);
-			fw.write("65");
-
+		try (InputStreamReader isr = new InputStreamReader(new FileInputStream("reader.txt"))) {
+			int i;
+			while ((i = isr.read()) != -1) {
+				System.out.print((char) i);
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("end");
 	}
 
 }

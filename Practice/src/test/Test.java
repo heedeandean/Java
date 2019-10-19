@@ -1,20 +1,26 @@
 package test;
 
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 
 public class Test {
 
 	public static void main(String[] args) {
-		try (InputStreamReader isr = new InputStreamReader(new FileInputStream("reader.txt"))) {
+		long millisecond = 0;
+		try (FileInputStream fis = new FileInputStream("a.zip");
+				FileOutputStream fos = new FileOutputStream("copy.zip")) {
+			millisecond = System.currentTimeMillis();
 			int i;
-			while ((i = isr.read()) != -1) {
-				System.out.print((char) i);
+			while ((i = fis.read()) != -1) {
+				fos.write(i);
 			}
+			millisecond = System.currentTimeMillis() - millisecond;
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		System.out.println("파일 복사하는데 " + millisecond + " millisecond 소요되었습니다.");
 	}
 
 }

@@ -1,30 +1,52 @@
 package test;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+
+class Person implements Serializable{
+	private static final long serialVersionUID = -1503252402544036183L;
+	String name;
+	String job;
+
+	public Person() {
+	}
+
+	public Person(String name, String job) {
+		this.name = name;
+		this.job = job;
+	}
+
+	public String toString() {
+		return name + ", " + job;
+	}
+}
 
 public class Test {
 
-	public static void main(String[] args) {
-		try (FileOutputStream fos = new FileOutputStream("data.txt");
-				DataOutputStream dos = new DataOutputStream(fos)) {
-			dos.writeByte(100);
-			dos.writeChar('A');
-			dos.writeInt(10);
-			dos.writeFloat(3.14f);
-			dos.writeUTF("Test");
+	public static void main(String[] args) throws ClassNotFoundException {
+		Person um = new Person("희딘딘", "대표이사");
+		Person tae = new Person("턍이", "상무이사");
+
+		try (FileOutputStream fos = new FileOutputStream("serial.out");
+				ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+			oos.writeObject(um);
+			oos.writeObject(tae);
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		try (FileInputStream fis = new FileInputStream("data.txt"); DataInputStream dis = new DataInputStream(fis)) {
-			System.out.println(dis.readByte());
-			System.out.println(dis.readChar());
-			System.out.println(dis.readInt());
-			System.out.println(dis.readFloat());
-			System.out.println(dis.readUTF());
+
+		try (FileInputStream fis = new FileInputStream("serial.out");
+				ObjectInputStream ois = new ObjectInputStream(fis)) {
+			Person p1 = (Person) ois.readObject();
+			Person p2 = (Person) ois.readObject();
+
+			System.out.println(p1);
+			System.out.println(p2);
 
 		} catch (IOException e) {
 			e.printStackTrace();

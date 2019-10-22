@@ -8,9 +8,10 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 class Person implements Serializable{
-	private static final long serialVersionUID = -1503252402544036183L;
+	
+	private static final long serialVersionUID = 2222507026713989405L;
 	String name;
-	String job;
+	transient String job;
 
 	public Person() {
 	}

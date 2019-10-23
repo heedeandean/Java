@@ -1,23 +1,34 @@
 package test;
 
-import java.io.File;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 
 public class Test {
 
 	public static void main(String[] args) throws IOException {
-		File file = new File("C:\\haha\\java\\Practice\\new.txt");
-		file.createNewFile();
+		RandomAccessFile rf = new RandomAccessFile("random.txt", "rw");
 
-		System.out.println(file.isFile());
-		System.out.println(file.isDirectory());
-		System.out.println(file.getName());
-		System.out.println(file.getAbsolutePath());
-		System.out.println(file.getPath());
-		System.out.println(file.canRead());
-		System.out.println(file.canWrite());
+		rf.writeInt(100);
+		System.out.println("파일 포인터 위치 : " + rf.getFilePointer());
 
-		file.delete();
+		rf.writeDouble(3.14);
+		System.out.println("파일 포인터 위치 : " + rf.getFilePointer());
+
+		rf.writeUTF("에효");
+		System.out.println("파일 포인터 위치 : " + rf.getFilePointer());
+		
+		rf.seek(0);
+		System.out.println("\n파일 포인터 위치 : " + rf.getFilePointer());
+
+		int i = rf.readInt();
+		double d = rf.readDouble();
+		String str = rf.readUTF();
+
+		System.out.println("파일 포인터 위치 : " + rf.getFilePointer() + "\n");
+		
+		System.out.println(i);
+		System.out.println(d);
+		System.out.println(str);
 	}
 
 }

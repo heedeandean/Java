@@ -1,56 +1,23 @@
 package test;
 
-import java.io.Externalizable;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.File;
 import java.io.IOException;
-import java.io.ObjectInput;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
-import java.io.ObjectOutputStream;
-
-class Dog implements Externalizable {
-	String name;
-
-	public Dog() {
-	}
-
-	@Override
-	public void writeExternal(ObjectOutput out) throws IOException {
-		out.writeUTF(name);
-	}
-
-	@Override
-	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-		name = in.readUTF();
-	}
-
-	public String toString() {
-		return name;
-	}
-
-}
 
 public class Test {
 
-	public static void main(String[] args) throws IOException, ClassNotFoundException {
-		Dog myDog = new Dog();
-		myDog.name = "멍멍이";
+	public static void main(String[] args) throws IOException {
+		File file = new File("C:\\haha\\java\\Practice\\new.txt");
+		file.createNewFile();
 
-		FileOutputStream fos = new FileOutputStream("e.out");
-		ObjectOutputStream oos = new ObjectOutputStream(fos);
+		System.out.println(file.isFile());
+		System.out.println(file.isDirectory());
+		System.out.println(file.getName());
+		System.out.println(file.getAbsolutePath());
+		System.out.println(file.getPath());
+		System.out.println(file.canRead());
+		System.out.println(file.canWrite());
 
-		try (fos; oos) {
-			oos.writeObject(myDog);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
-		FileInputStream fis = new FileInputStream("e.out");
-		ObjectInputStream ois = new ObjectInputStream(fis);
-
-		Dog dog = (Dog) ois.readObject();
-		System.out.println(dog);
+		file.delete();
 	}
 
 }

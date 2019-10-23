@@ -1,34 +1,21 @@
 package test;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.RandomAccessFile;
+import java.io.OutputStreamWriter;
 
 public class Test {
 
-	public static void main(String[] args) throws IOException {
-		RandomAccessFile rf = new RandomAccessFile("random.txt", "rw");
+	public static void main(String[] args) {
+		try (FileOutputStream fos = new FileOutputStream("a.txt");
+				OutputStreamWriter osw = new OutputStreamWriter(fos)) {
+			osw.write("빅데이터 가즈아");
+		} catch (IOException e) {
+			System.out.println(e);
+		}
 
-		rf.writeInt(100);
-		System.out.println("파일 포인터 위치 : " + rf.getFilePointer());
+		System.out.println("a.txt 파일을 열어보셈");
 
-		rf.writeDouble(3.14);
-		System.out.println("파일 포인터 위치 : " + rf.getFilePointer());
-
-		rf.writeUTF("에효");
-		System.out.println("파일 포인터 위치 : " + rf.getFilePointer());
-		
-		rf.seek(0);
-		System.out.println("\n파일 포인터 위치 : " + rf.getFilePointer());
-
-		int i = rf.readInt();
-		double d = rf.readDouble();
-		String str = rf.readUTF();
-
-		System.out.println("파일 포인터 위치 : " + rf.getFilePointer() + "\n");
-		
-		System.out.println(i);
-		System.out.println(d);
-		System.out.println(str);
 	}
 
 }

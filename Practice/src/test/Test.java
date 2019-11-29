@@ -3,16 +3,22 @@ package test;
 public class Test {
 
 	public static void main(String[] args) {
-		char ch1 = 'Z';
-		System.out.println(ch1);
-		System.out.println((int)ch1);
-	
-		char ch2 = 38;
-		System.out.println(ch2);
-		
-		int ch3 = 97;
-		System.out.println(ch3);
-		System.out.println((char)ch3);
+		byte bNum = 10;
+		int iNum = bNum;
+
+		System.out.println(bNum);
+		System.out.println(iNum);
+
+		int iNum2 = 20;
+		float fNum = iNum2;
+
+		System.out.println(iNum);
+		System.out.println(fNum);
+
+		double dNum;
+		dNum = fNum + iNum;
+		System.out.println(dNum);
+
 	}
 
 }

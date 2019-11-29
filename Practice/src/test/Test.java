@@ -7,6 +7,9 @@ public class Test {
 		double dNum = 2.0;
 
 		System.out.println((int) (iNum + dNum));
+		System.out.println((int) (iNum - dNum));
+		System.out.println((int) (iNum / dNum));
+		System.out.println((int) (iNum * dNum));
 
 	}
 

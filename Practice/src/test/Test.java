@@ -3,9 +3,16 @@ package test;
 public class Test {
 
 	public static void main(String[] args) {
-		int age;
-		age = 20;
-		System.out.println(age);
+		char ch1 = 'Z';
+		System.out.println(ch1);
+		System.out.println((int)ch1);
+	
+		char ch2 = 38;
+		System.out.println(ch2);
+		
+		int ch3 = 97;
+		System.out.println(ch3);
+		System.out.println((char)ch3);
 	}
 
 }

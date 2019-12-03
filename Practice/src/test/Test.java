@@ -4,15 +4,14 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		int dan;
-		int times;
+		int num;
 
-		for (dan = 3; dan <= 7; dan++) {
-			for (times = 1; times <= 9; times++) {
-				System.out.println(dan + "X" + times + "=" + dan * times);
-			}
-			System.out.println();
+		for (num = 1; num <= 100; num++) {
+			if (num % 3 != 0)
+				continue;
+			System.out.println(num);
 		}
+
 	}
 
 }

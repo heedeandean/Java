@@ -3,26 +3,22 @@ package test;
 public class Test {
 
 	public static void main(String[] args) {
-		int age = 60;
-		int charge;
+		int score = 100;
+		char grade;
 
-		if (age < 8) {
-			charge = 1000;
-			System.out.println("취학 전 아동입니다.");
-		} else if (age < 14) {
-			charge = 2000;
-			System.out.println("초딩입니다.");
-		} else if (age < 20) {
-			charge = 2500;
-			System.out.println("중, 고딩입니다.");
-		} else if (age < 60) {
-			charge = 3000;
-			System.out.println("일반인입니다.");
+		if (score >= 90) {
+			grade = 'A';
+		} else if (score >= 80) {
+			grade = 'B';
+		} else if (score >= 70) {
+			grade = 'C';
+		} else if (score >= 60) {
+			grade = 'D';
 		} else {
-			charge = 0;
-			System.out.println("노인입니다.");
+			grade = 'F';
 		}
-		System.out.println("입장료는 " + charge + "원 입니다.");
+
+		System.out.println(grade + "입니다.");
 
 	}
 

@@ -10,6 +10,7 @@ public class Test {
 		System.out.println((int)(iNum - dNum));
 		System.out.println((int)(iNum * dNum));
 		System.out.println((int)(iNum / dNum));
+
 	}
 
 }

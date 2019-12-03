@@ -4,8 +4,14 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		for (int i = 1; i <= 10; i++) {
-			System.out.println("안녕하세요" + i);
+		int dan;
+		int times;
+
+		for (dan = 3; dan <= 7; dan++) {
+			for (times = 1; times <= 9; times++) {
+				System.out.println(dan + "X" + times + "=" + dan * times);
+			}
+			System.out.println();
 		}
 	}
 

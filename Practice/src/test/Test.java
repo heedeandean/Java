@@ -3,16 +3,29 @@ package test;
 public class Test {
 
 	public static void main(String[] args) {
+		int lineCount = 115;
+		int spaceCount = lineCount / 2 + 1;
+		int starCount = 1;
 
-		for (int dan = 2; dan <= 9; dan++) {
-			for (int times = 1; times <= 9; times++) {
-				if (dan < times)
-					break;
-				System.out.println(dan + " x " + times + " = " + (dan * times));
+		for (int i = 0; i < lineCount; i++) {
+			for (int j = 0; j < spaceCount; j++) {
+				System.out.print(' ');
+			}
+			for (int j = 0; j < starCount; j++) {
+				System.out.print('*');
+			}
+			for (int j = 0; j < spaceCount; j++) {
+				System.out.print(' ');
+			}
+			if (i < lineCount / 2) {
+				spaceCount -= 1;
+				starCount += 2;
+			} else {
+				spaceCount += 1;
+				starCount -= 2;
 			}
 			System.out.println();
 		}
-
 	}
 
 }

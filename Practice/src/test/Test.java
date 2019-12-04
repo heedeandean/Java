@@ -3,7 +3,7 @@ package test;
 public class Test {
 
 	public static void main(String[] args) {
-		int lineCount = 115;
+		int lineCount = 4;
 		int spaceCount = lineCount / 2 + 1;
 		int starCount = 1;
 
@@ -15,17 +15,14 @@ public class Test {
 				System.out.print('*');
 			}
 			for (int j = 0; j < spaceCount; j++) {
-				System.out.print(' ');
+				System.out.print(" ");
 			}
-			if (i < lineCount / 2) {
-				spaceCount -= 1;
-				starCount += 2;
-			} else {
-				spaceCount += 1;
-				starCount -= 2;
-			}
+			spaceCount -= 1;
+			starCount += 2;
 			System.out.println();
+
 		}
+
 	}
 
 }

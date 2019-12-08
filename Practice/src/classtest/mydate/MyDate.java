@@ -3,7 +3,6 @@ package classtest.mydate;
 import java.util.Calendar;
 
 public class MyDate {
-
 	private int day;
 	private int month;
 	private int year;
@@ -34,6 +33,7 @@ public class MyDate {
 				this.day = day;
 			}
 			break;
+			
 		case 4:
 		case 6:
 		case 9:
@@ -44,23 +44,26 @@ public class MyDate {
 				this.day = day;
 			}
 			break;
+			
 		case 2:
-			if (((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)) {
+			if ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
 				if (day < 1 || day > 29) {
 					isValid = false;
 				} else {
 					this.day = day;
 				}
 			} else {
-				if (day < 0 || day > 28) {
+				if (day < 1 || day > 28) {
 					isValid = false;
 				} else {
 					this.day = day;
 				}
 			}
 			break;
+			
 		default:
 			isValid = false;
+			break;
 		}
 	}
 
@@ -84,16 +87,15 @@ public class MyDate {
 		if (year > Calendar.getInstance().get(Calendar.YEAR)) {
 			isValid = false;
 		} else {
-
 			this.year = year;
+
 		}
 	}
 
 	public String isValid() {
-		if(isValid) {
+		if (isValid) {
 			return "유효한 날짜입니다.";
-		}
-		else {
+		} else {
 			return "유효하지 않은 날짜입니다.";
 		}
 	}

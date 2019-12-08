@@ -5,6 +5,7 @@ public class TakeTrans {
 	public static void main(String[] args) {
 		Student hee = new Student("hee", 5000);
 		Student deandean = new Student("deandean", 10000);
+		Student e = new Student("e", 10000);
 
 		Bus bus100 = new Bus(100);
 		hee.takeBus(bus100);
@@ -17,6 +18,14 @@ public class TakeTrans {
 		deandean.takeSubway(sub7);
 		deandean.showInfo();
 		sub7.showInfo();
+
+		System.out.println();
+
+		Taxi taxi100 = new Taxi(100);
+		e.takeTaxi(taxi100);
+		e.showInfo();
+		taxi100.showInfo();
+
 	}
 
 }

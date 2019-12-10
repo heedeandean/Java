@@ -1,16 +1,54 @@
 package test;
 
+class Student {
+	private String stuID;
+	private String name;
+
+	public Student() {
+	}
+
+	public Student(String stuID, String name) {
+		this.stuID = stuID;
+		this.name = name;
+	}
+
+	public String getStuID() {
+		return stuID;
+	}
+
+	public void setStuID(String stuID) {
+		this.stuID = stuID;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void showStuInfo() {
+		System.out.println(stuID + ", " + name);
+	}
+
+}
+
 public class Test {
 
 	public static void main(String[] args) {
-		int[] num = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		int sum = 0;
+		Student[] library = new Student[3];
 
-		for (int i = 0; i < num.length; i++) {
-//			System.out.println(num[i]);
-			sum += num[i];
+		library[0] = new Student("1001", "김일수");
+		library[1] = new Student("1002", "김이수");
+		library[2] = new Student("1003", "김삼수");
+
+		for (int i = 0; i < library.length; i++) {
+			library[i].showStuInfo();
 		}
-		System.out.println(sum);
+		for (int i = 0; i < library.length; i++) {
+			System.out.println(library[i]);
+		}
 	}
 
 }

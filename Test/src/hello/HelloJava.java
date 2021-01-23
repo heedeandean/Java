@@ -3,16 +3,37 @@ package hello;
 public class HelloJava {
 
 	public static void main(String[] args) {
-		char ch1 = 'Z';
-		System.out.println(ch1);
-		System.out.println((int)ch1);
 		
-		char ch2 = 38;
-		System.out.println(ch2);
+		int l;
+		int loopCnt = 1;
+		int layerCnt = 7;
+		int space;
+		int spaceCnt = layerCnt-1;
 		
-		int ch3 = 97;
-		System.out.println(ch3);
-		System.out.println((char)ch3);
+		for(int layer=1; layer<=layerCnt; layer++) {
+			
+			for (space=1; space<=spaceCnt; space++) {
+				System.out.print(' ');
+			}
+			
+			for(l=1; l<=loopCnt; l++) {
+				System.out.print("*");
+			}
+			System.out.println();
+			
+			if(layer < ((layerCnt/2) + 1)) {
+				spaceCnt -= 1;
+				loopCnt += 2;				
+			}
+			else {
+				spaceCnt += 1;
+				loopCnt -= 2;						
+			}
+			
+			
+			
+		}
+			
 		
 	}
 

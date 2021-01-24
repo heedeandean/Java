@@ -8,10 +8,9 @@ public class TwoDimension {
 		char ch = 'a';
 
 		for (int i = 0; i < alp.length; i++) {
-			for (int j = 0; j < alp[i].length; j++) {
+			for (int j = 0; j < alp[i].length; j++, ch++) {
 				alp[i][j] = ch;
-				ch++;
-				System.out.println(alp[i][j]);
+				System.out.print(alp[i][j]);
 			}
 			System.out.println();
 		}

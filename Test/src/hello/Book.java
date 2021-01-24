@@ -28,6 +28,6 @@ public class Book {
 	}
 	
 	public void showBookInfo() {
-		System.out.println(bookName + " ," + author);
+		System.out.println(bookName + ", " + author);
 	}
 }

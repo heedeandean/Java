@@ -8,14 +8,11 @@ public class StudentArrayList {
 
 		ArrayList<Student> stuList = new ArrayList<Student>();
 
-		stuList.add(new Student(1001, "Um"));
-		stuList.add(new Student(1002, "Hee"));
-		stuList.add(new Student(1003, "Jin"));
+		stuList.add(new Student(1001, "김일수"));
+		stuList.add(new Student(1002, "김이수"));
+		stuList.add(new Student(1003, "김삼수"));
 
 		for (int i = 0; i < stuList.size(); i++) {
-//			Student student = school.get(i);
-//			student.showStudentInfo();
-//			
 			stuList.get(i).showStudentInfo();
 		}
 

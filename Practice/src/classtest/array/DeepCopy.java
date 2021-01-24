@@ -6,9 +6,9 @@ public class DeepCopy {
 		Student[] stuArray1 = new Student[3];
 		Student[] stuArray2 = new Student[3];
 
-		stuArray1[0] = new Student(1, "Um");
-		stuArray1[1] = new Student(2, "Hee");
-		stuArray1[2] = new Student(3, "Jin");
+		stuArray1[0] = new Student(1, "김일수");
+		stuArray1[1] = new Student(2, "김이수");
+		stuArray1[2] = new Student(3, "김삼수");
 
 		stuArray2[0] = new Student();
 		stuArray2[1] = new Student();

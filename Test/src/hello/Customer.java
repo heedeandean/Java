@@ -7,12 +7,20 @@ public class Customer {
 	int bonusPoint;
 	double bonusRatio;
 	
+	public Customer() {
+		initCustomer();
+	}
+	
 	public Customer(int cusID, String cusName) {
 		this.cusID = cusID;
 		this.cusName = cusName;
+		initCustomer();
+		
+	}
+	
+	private void initCustomer() {
 		cusGrade = "SILVER";
 		bonusRatio = 0.01;
-		System.out.println("상위클래스 생성");
 	}
 	
 	public int calcPrice(int price) {

@@ -10,12 +10,23 @@ public class VIP extends Customer {
 		bonusRatio = 0.05;
 		saleRatio = 0.1;
 		this.agentID = agentID;
-		System.out.println("하위클래스 생성");
 	}
 
 	public int getAgentID() {
 		return agentID;
 	}
 	
+	public int calcPrice(int price) {
+		bonusPoint += price * bonusRatio;
+		return price - (int)(price*saleRatio);
+	}
+	
+	public String showCusInfo() {
+		return super.showCusInfo() + agentID;
+	}
+	
+	
+
+
 	
 }

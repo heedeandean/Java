@@ -3,20 +3,17 @@ package hello;
 public class Test {
 
 	public static void main(String[] args) {
-		Student s1 = new Student(1001, "일수");
-		s1.addSub("국어", 100);
-		s1.addSub("수학", 50);
+//		Customer c1 = new Customer();
+//		c1.setCusID(10010);
+//		c1.setCusName("김일수");
+//		c1.bonusPoint = 1000;
+//		System.out.println(c1.showCusInfo());
 
-		Student s2 = new Student(1002, "이수");
-		s2.addSub("국어", 70);
-		s2.addSub("수학", 85);
-		s2.addSub("영어", 100);
-		
-		s1.showStuInfo();
-		System.out.println();
-		s2.showStuInfo();
-		
-		
+		VIP c2 = new VIP();
+		c2.setCusID(10010);
+		c2.setCusName("김일수");
+		c2.bonusPoint = 1000;
+		System.out.println(c2.showCusInfo());
 	}
 
 }

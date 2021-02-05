@@ -13,6 +13,17 @@ class Stu {
 	public String toString() {
 		return stuId + "," + stuName;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if(obj instanceof Stu) {
+			Stu s = (Stu)obj;
+			if(this.stuId == s.stuId)
+				return true;
+			else return false;
+		}
+		return false;
+	}
 	
 	
 }

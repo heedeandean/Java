@@ -6,14 +6,14 @@ public class StringEquals {
 		String s1 = new String("a");
 		String s2 = new String("a");
 		
-		System.out.println(s1 == s2);
-		System.out.println(s1.equals(s2));
+		System.out.println(s1);
+		System.out.println(System.identityHashCode(s1));
 		
-		Integer i1 = new Integer(1);
-		Integer i2 = new Integer(1);
+		s1 = s1.concat(s2);
 		
-		System.out.println(i1 == i2);
-		System.out.println(i1.equals(i2));
+		System.out.println(s1);
+		System.out.println(System.identityHashCode(s1));
+		
 	}
 
 }

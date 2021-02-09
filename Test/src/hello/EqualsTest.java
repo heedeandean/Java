@@ -24,6 +24,11 @@ class Stu {
 		}
 		return false;
 	}
+
+	@Override
+	public int hashCode() {
+		return stuId;
+	}
 	
 	
 }
@@ -35,18 +40,23 @@ public class EqualsTest {
 		Stu s2 = s1;
 		Stu s3 = new Stu(100, "김일수");
 		
-		if(s1 == s2) System.out.println("s1, s2 주소 같음");
-		else System.out.println("s1, s2 주소 다름");
+//		if(s1 == s2) System.out.println("s1, s2 주소 같음");
+//		else System.out.println("s1, s2 주소 다름");
+//		
+//		if(s1.equals(s2)) System.out.println("s1, s2 동일");
+//		else System.out.println("s1, s2 동일하지 않음");
+//		
+//		if(s1 == s3) System.out.println("s1, s3 주소 같음");
+//		else System.out.println("s1, s3 주소 다름");
+//		
+//		if(s1.equals(s3)) System.out.println("s1, s3 동일");
+//		else System.out.println("s1, s3 동일하지 않음");
 		
-		if(s1.equals(s2)) System.out.println("s1, s2 동일");
-		else System.out.println("s1, s2 동일하지 않음");
+		System.out.println(s1.hashCode());
+		System.out.println(s3.hashCode());
 		
-		if(s1 == s3) System.out.println("s1, s3 주소 같음");
-		else System.out.println("s1, s3 주소 다름");
-		
-		if(s1.equals(s3)) System.out.println("s1, s3 동일");
-		else System.out.println("s1, s3 동일하지 않음");
-		
+		System.out.println(System.identityHashCode(s1));
+		System.out.println(System.identityHashCode(s3));
 	}
 
 }

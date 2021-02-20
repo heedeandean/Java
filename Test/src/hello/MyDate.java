@@ -1,4 +1,4 @@
-package classtest.mydate;
+package hello;
 
 import java.util.Calendar;
 

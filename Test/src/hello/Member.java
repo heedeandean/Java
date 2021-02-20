@@ -47,7 +47,6 @@ public class Member implements Comparable<Member>{
 
 	@Override
 	public int compareTo(Member member) {
-		
 		return (this.memberId - member.memberId) *  (-1);   //���� ����
 	}
 }
